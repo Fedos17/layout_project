@@ -1,0 +1,19 @@
+{
+  "name": "layout_proj",
+  "version": "1.0.0",
+  "description": "first_layout_progect_using_gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fedos17/layout_project.git"
+  },
+  "author": "Fedorov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fedos17/layout_project/issues"
+  },
+  "homepage": "https://github.com/Fedos17/layout_project#readme"
+}
