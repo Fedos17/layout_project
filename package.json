@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "first_layout_progect_using_gulp",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/Fedos17/layout_project/issues"
   },
-  "homepage": "https://github.com/Fedos17/layout_project#readme"
+  "homepage": "https://github.com/Fedos17/layout_project#readme",
+  "devDependencies": {
+    "@types/node": "^18.8.3",
+    "del": "^7.0.0",
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.3.0"
+  }
 }
