@@ -2,11 +2,14 @@
 import gulp from 'gulp';
 //імпорт об'єкта з шляхами
 import {path} from "./gulp/config/path.js";
+//імпорт общих плагінів
+import {plugins} from './gulp/config/plugins.js'
 
-//глобальна змінна з шляхами і модулем gulp
+//глобальна змінна з шляхами, модулем gulp, і плагінами
 global.app = {
     path: path,
-    gulp: gulp
+    gulp: gulp,
+    plugins: plugins,
 }
 
 //імпорт створеної в f.tasks задачі
