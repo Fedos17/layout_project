@@ -1,0 +1,21 @@
+body{
+  background: url("src/img/1q.jpg") 0 1px no-repeat;
+  h1{
+    color: aqua;
+    font-size: 30px;
+    font-weight: 10;
+  }
+}
+
+@media (max-width: 768px) {
+  h1{
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  h1{
+    color: blueviolet;
+  }
+}

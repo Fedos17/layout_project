@@ -1,0 +1,20 @@
+.no-webp body {
+  background: url("src/img/1q.jpg") 0 1px no-repeat; }
+
+body h1 {
+  color: aqua;
+  font-size: 30px;
+  font-weight: 10;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 16px;
+  }
+
+  h1 {
+    color: blueviolet;
+  }
+}
+
+.webp body { background: url(src/img/1q.webp) 0 1px no-repeat; }
