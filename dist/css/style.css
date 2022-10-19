@@ -1,15 +1,36 @@
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Italic-VariableFont_wght.woff2") format("woff2"), url("../fonts/Montserrat-Italic-VariableFont_wght.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  src: url("../fonts/Montserrat-VariableFont_wght.woff2") format("woff2"), url("../fonts/Montserrat-VariableFont_wght.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
 .no-webp body {
-  background: url("src/img/1q.jpg") 0 1px no-repeat; }
+  background: url("../img/1q.jpg") 0 0 no-repeat; }
 
 body h1 {
-  color: aqua;
-  font-size: 30px;
-  font-weight: 10;
+  font-size: 25px;
+  font-weight: 12;
+  color: blue;
+}
+
+img {
+  height: 223px;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 16px;
+    font-size: 10px;
   }
 
   h1 {
@@ -17,4 +38,4 @@ body h1 {
   }
 }
 
-.webp body { background: url(src/img/1q.webp) 0 1px no-repeat; }
+.webp body { background: url(../img/1q.webp) 0 0 no-repeat; }

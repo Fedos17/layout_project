@@ -1,15 +1,23 @@
+@import "fonts";
+
 body{
-  background: url("src/img/1q.jpg") 0 1px no-repeat;
+  background: url("src/img/1q.jpg") 0 0 no-repeat;
+  //font-family: Montserrat;
   h1{
-    color: aqua;
-    font-size: 30px;
-    font-weight: 10;
+    font-size: 25px;
+    font-weight: 12;
+    color: blue;
   }
+}
+
+img{
+  height: 223px;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
   h1{
-    font-size: 16px;
+    font-size: 10px;
   }
 }
 

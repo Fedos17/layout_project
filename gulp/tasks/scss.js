@@ -4,7 +4,9 @@ import rename from 'gulp-rename'; // перейменовує файл
 import cleanCss from 'gulp-clean-css';// зжимає CSS файл
 import webpcss from 'gulp-webpcss';// Вивід WEBP зображень
 import autoprefixer from 'gulp-autoprefixer';// Додавання вендорних префіксів (для кросбраухерності)
-import groupCssMediaQueries from 'gulp-group-css-media-queries';// Групування медіа запитів
+import groupCssMediaQueries from 'gulp-group-css-media-queries'; // Групування медіа запитів
+import replace from "gulp-replace";
+
 
 const sass = gulpSass(dartSass);
 
@@ -17,6 +19,7 @@ export const scss = () => {
                 })
             )
         )
+        .pipe(replace(`src/img`, '../img'))
         .pipe(sass({
             outputStyle: 'expanded'
         }, true))

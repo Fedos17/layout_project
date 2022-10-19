@@ -19,6 +19,10 @@ import {html} from "./gulp/tasks/html.js";
 import {server} from "./gulp/tasks/server.js";
 import {scss} from "./gulp/tasks/scss.js";
 import {js} from "./gulp/tasks/js.js";
+import {images} from "./gulp/tasks/images.js";
+import {otfToTtf, ttfToWoff, fontsStyle} from './gulp/tasks/fonts.js';
+import {svgSprive} from './gulp/tasks/svgSprive.js';
+
 
 //функція для спостереження за файлами
 function watcher() {
@@ -26,13 +30,18 @@ function watcher() {
     gulp.watch(path.watch.html, html);
     gulp.watch(path.watch.scss, scss);
     gulp.watch(path.watch.js, js);
+    gulp.watch(path.watch.images, images);
 }
 
+export {svgSprive}
+
+const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle);
+
 //побудова запуску паралельних задач
-const mainTasks = gulp.parallel(copy, html, scss, js)
+const mainTasks = gulp.series(fonts, gulp.parallel(copy, html, scss, js, images));
 
 //побудова виконання послідовних задач задач
-const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server))
+const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
 
 //запуск виконання задачі
 gulp.task('default', dev);
